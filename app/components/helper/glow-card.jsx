@@ -7,7 +7,7 @@ const GlowCard = ({ children, identifier }) => {
     const cardsRef = useRef([]);
 
     useEffect(() => {
-        // This check ensures the code runs only on the client-side.
+        // Ensure this code only runs in the browser
         if (typeof window === "undefined" || typeof document === "undefined") return;
 
         const CONFIG = {
@@ -20,8 +20,9 @@ const GlowCard = ({ children, identifier }) => {
         };
 
         const handlePointerMove = (event) => {
-            // Loop through each card and calculate its position relative to the pointer
             cardsRef.current.forEach((card) => {
+                if (!card) return;
+
                 const cardBounds = card.getBoundingClientRect();
 
                 // Check if pointer is within the proximity of the card
@@ -75,13 +76,20 @@ const GlowCard = ({ children, identifier }) => {
         };
     }, []); // Empty dependency array ensures this only runs on mount and unmount
 
+    // Create a controlled ref assignment for the cards
+    const setCardRef = (el) => {
+        if (el && !cardsRef.current.includes(el)) {
+            cardsRef.current.push(el);
+        }
+    };
+
     return (
         <div
             ref={containerRef}
             className={`glow-container-${identifier} glow-container`}
         >
             <article
-                ref={(el) => el && cardsRef.current.push(el)}
+                ref={setCardRef}
                 className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#2a2e5a] transition-all duration-300 relative bg-[#101123] text-gray-200 rounded-xl hover:border-transparent w-full`}
             >
                 <div className="glows"></div>
