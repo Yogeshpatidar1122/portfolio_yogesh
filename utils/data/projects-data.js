@@ -18,7 +18,7 @@ export const projectsData = [
         tools: ['NextJS', 'Tailwind CSS', "TypeScript", "Strapi CMS", "MongoDB", "Firebase"],
         role: 'Full Stack Developer',
         code: 'https://github.com/Yogeshpatidar1122/Grocery-store',
-        demo: 'https://grocery-store-tan.vercel.app/',
+        demo: 'https://chatapp-ecru-tau.vercel.app/',
         image: '/image/chatapp.png',
     },
     {
@@ -27,9 +27,9 @@ export const projectsData = [
         description: "Hello and thank you for visiting my personal portfolio.Here, you'll find a curated collection showcasing my skills, experiences, and passion in various domains. As a versatile individual with a commitment to excellence, I've crafted this portfolio to offer you insight into my journey, projects, and contributions.",
 
         tools: ['React', 'Next.js', 'Express', 'TypeScript', 'Nodemailer'],
-        code: 'https://github.com/Yogeshpatidar1122/new_portfolio',
+        code: 'https://github.com/Yogeshpatidar1122/portfolio_yogesh',
         role: 'Full Stack Developer',
-        demo: '',
+        demo: 'https://portfolio-yogesh-5lle-orr3tq5ui-yogesh-patidars-projects.vercel.app/',
         image: '',
     },
     {
