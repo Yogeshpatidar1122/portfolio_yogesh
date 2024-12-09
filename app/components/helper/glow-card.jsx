@@ -8,7 +8,7 @@ const GlowCard = ({ children, identifier }) => {
 
     useEffect(() => {
         // Ensure this code only runs in the browser
-        if (typeof window === "undefined" || typeof document === "undefined") return;
+        if (typeof window !== "undefined" || typeof document !== "undefined") return;
 
         const CONFIG = {
             proximity: 40,
