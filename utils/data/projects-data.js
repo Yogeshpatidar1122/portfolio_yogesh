@@ -8,7 +8,7 @@ export const projectsData = [
         tools: ['Express', 'MongoDB', 'Next.js', 'React.js', 'Strapi', 'TailwindCss'],
         role: 'Full Stack Developer',
         code: 'https://github.com/Yogeshpatidar1122/Grocery-store',
-        demo: 'https://grocery-store-tan.vercel.app/',
+        demo: 'https://grocery-store-pi.vercel.app/',
         image: '/image/grocerystore.png',
     },
     {
@@ -17,7 +17,7 @@ export const projectsData = [
         description: "This project is a modern web application designed for managing a grocery store, built using the following technologies Strapi: A powerful and flexible headless CMS that provides an easy way to manage content and APIs.ShadCN: A component library that brings accessibility and design consistency to the front-end.Next.js: A React framework that offers server-side rendering, static site generation, and a seamless development experience.MongoDB: A NoSQL database used for efficient data storage and retrieval.The combination of these tools allows for a dynamic and scalable grocery store platform, enabling easy content management, efficient user interactions, and robust backend support.",
         tools: ['NextJS', 'Tailwind CSS', "TypeScript", "Strapi CMS", "MongoDB", "Firebase"],
         role: 'Full Stack Developer',
-        code: 'https://github.com/Yogeshpatidar1122/Grocery-store',
+        code: 'https://github.com/Yogeshpatidar1122/nextjs_chatApp',
         demo: 'https://chatapp-ecru-tau.vercel.app/',
         image: '/image/chatapp.png',
     },
@@ -29,7 +29,7 @@ export const projectsData = [
         tools: ['React', 'Next.js', 'Express', 'TypeScript', 'Nodemailer'],
         code: 'https://github.com/Yogeshpatidar1122/portfolio_yogesh',
         role: 'Full Stack Developer',
-        demo: 'https://portfolio-yogesh-5lle-orr3tq5ui-yogesh-patidars-projects.vercel.app/',
+        demo: 'https://portfolio-yogesh-lemon.vercel.app/',
         image: '',
     },
     {

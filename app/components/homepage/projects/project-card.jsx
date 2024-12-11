@@ -33,10 +33,10 @@ function ProjectCard({ project }) {
 
           {/* Action Buttons */}
           <div className="flex space-x-4">
-            <Link href={personalData.github} target="_blank" aria-label="GitHub" className="transition-transform text-pink-500 hover:scale-125">
+            <Link href={project.code} target="_blank" aria-label="GitHub" className="transition-transform text-pink-500 hover:scale-125">
               <BsGithub size={26} />
             </Link>
-            <Link href={personalData.Vercel} target="_blank" aria-label="Vercel Deployment" className="transition-transform text-pink-500 hover:scale-125">
+            <Link href={project.demo} target="_blank" aria-label="Vercel Deployment" className="transition-transform text-pink-500 hover:scale-125">
               <SiVercel size={26} />
             </Link>
           </div>
